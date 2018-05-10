@@ -1,0 +1,55 @@
+/* 1. */
+.block {
+    display: inline;
+}
+/* 2. */
+.inline{
+    display: block;
+    border-style: solid;
+    border-width: 1px;
+    margin: 25px;
+}
+/* 3. */
+.n-child section:nth-of-type(even){
+    border-style: solid;
+    border-width: 1px;
+}
+/* 4. */
+.top li:not(:last-child):after{
+    content: ",";
+}
+/* 5 */
+.n-type section:nth-of-type(odd){
+    color: blue;
+}
+/* 6. */
+.first-of-type aside:first-of-type{
+    color: lime;
+}
+/* 7. */
+.first-of-type section:first-of-type{
+    background-color: purple;
+}
+/* 8. */
+.three section{
+    background-color: orange;
+}
+/* 9. */
+.three :first-of-type{
+    background-color: goldenrod;
+}
+/* 10. */
+.three :last-of-type{
+    background-color: darkslategray;
+}
+/* 11. Give each article element a title of "Article parent element",
+a dashed gray border, and a background color of royalblue.
+Also ensure that it spans the entire length of the document.*/
+article::before{
+    content: "Article parent element";
+    border-style: dashed;
+    border-color: gray;
+    background-color: royalblue;
+    background-size: 100%;
+    display: block;
+}
